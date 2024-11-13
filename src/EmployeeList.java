@@ -18,7 +18,7 @@ public class EmployeeList {
         for (Employee e : employees) {
             sum += e.getSalary();
         }
-        return sum / employees.length;
+        return employees.length == 0 ? 0 : sum / employees.length;
     }
 
     public int belowAverage() {
